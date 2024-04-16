@@ -8,10 +8,10 @@ import io.github.admirogaieta.pessoaapi.core.entities.Pessoa;
 public interface PessoaGateway {
   Pessoa createPessoa (Pessoa  pessoa);
 
- Pessoa findByBi(String bi);
-
   List<Pessoa> obtainAllPessoas();
 
+  Pessoa findByBi(String bi);
+  
   void deletePessoaById(long id);
  
   Optional<Pessoa> findById(long id); // Adicione este método à interface
