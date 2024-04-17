@@ -9,11 +9,10 @@ public interface PessoaGateway {
   Pessoa createPessoa (Pessoa  pessoa);
 
   List<Pessoa> obtainAllPessoas();
+  void deletePessoaById(long id);
 
   Pessoa findByBi(String bi);
   
-  void deletePessoaById(long id);
- 
   Optional<Pessoa> findById(long id); // Adicione este método à interface
   
   Optional<Pessoa> updatePessoa(Pessoa pessoa);
