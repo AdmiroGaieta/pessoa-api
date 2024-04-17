@@ -24,7 +24,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker buildx build --platform linux/amd64 -t admiro/pessoa-api:latest .
+        docker buildx build --platform linux/amd64 -t admiro/pessoa-api:latest --load .
 
     - name: Push Docker image
       run: |
